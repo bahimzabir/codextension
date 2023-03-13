@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Cod currency converter extension",
+    "description": "this module is used to convert currency from one currency to another currency",
+    "version": "1.0",
+    "icons": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/16.png",
+            "48": "images/48.png",
+            "128": "images/128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://cod.network/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
